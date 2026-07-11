@@ -1,2 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-merienda: "Merienda", cursive;
+}
+
+body {
+  font-family: "Merienda", cursive;
+}
+
