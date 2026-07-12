@@ -75,9 +75,9 @@ const App = () => {
 
         {/* all tasks */}
         {alltasks.map((item,index) => (
-          <div key={index} className='md:text-xl flex items-center gap-3 border border-gray-500 rounded-[20px] my-2 md:my-5 p-2 md:p-5'>
+          <div key={index} className='md:text-xl flex items-center gap-3 border border-gray-500 rounded-[20px] my-3 md:my-5 p-3 md:p-5'>
             <h2 className=''>{item.todo}</h2>
-            <button className='p-2 bg-blue-800 rounded-br-2xl rounded-tl-2xl'>
+            <button className='p-2 bg-blue-800 hover:bg-blue-600 rounded-br-2xl rounded-tl-2xl'>
               <Link to='/edit' state={{id: item.id , task:item.todo}}><FiEdit /></Link>
             </button>
             <button onClick={()=> handleTaskDelete(item.id)} className=' text-red-600 md:text-gray-400 hover:text-red-600 p-1 rounded-full hover:bg-red-950 bg-red-950 md:bg-black text-2xl md:text-4xl'><MdDeleteForever />
